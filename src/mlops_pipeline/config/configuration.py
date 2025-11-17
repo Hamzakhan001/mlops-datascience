@@ -1,6 +1,6 @@
 from src.mlops_pipeline.constants import *
 from src.mlops_pipeline.utils.common import read_yaml,create_directories
-from src.mlops_pipeline.entity.config_entity import (DataIngestionconfig)
+from src.mlops_pipeline.entity.config_entity import (DataIngestionconfig,DataValidationConfig)
 
 
 
@@ -26,3 +26,17 @@ class ConfigurationManager:
         )
         
         return data_ingestion_config
+    
+    def get_validation_config(self)-> DataValidationConfig:
+        config = self.config.data_validation
+        schema = self.schema.COLUMNS
+        
+        data_validation_config = DataValidationConfig(
+            root_dir = config.root.dir,
+            STATUS_FILE=config.STATUS_FILE,
+            unzip_data_dir = config.unzip_data_dir,
+            all_schema=schema
+            
+        )
+        
+        return data_validation_config
