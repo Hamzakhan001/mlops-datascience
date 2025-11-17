@@ -162,3 +162,71 @@ Expires: Mon, 17 Nov 2025 14:29:00 GMT
 Source-Age: 0
 
 ]
+[2025-11-17 16:21:29,060: INFO: main :Data Ingestion stage]
+[2025-11-17 16:21:29,060: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 16:21:29,060: INFO: common :yaml file: params.yaml loaded]
+[2025-11-17 16:21:29,060: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-17 16:21:29,074: INFO: common :created directory at:artifacts]
+[2025-11-17 16:21:29,074: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-17 16:21:29,074: INFO: data_ingeation :Rile already exists]
+[2025-11-17 16:21:29,076: INFO: main :Data Validation stage]
+[2025-11-17 16:21:29,076: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 16:21:29,076: INFO: common :yaml file: params.yaml loaded]
+[2025-11-17 16:21:29,076: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-17 16:21:29,076: INFO: common :created directory at:artifacts]
+[2025-11-17 16:21:29,076: ERROR: main :"'ConfigBox' object has no attribute 'root'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 22, in <module>
+    data_validation.initiate_data_validation()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_validation_pipeline.py", line 15, in initiate_data_validation
+    data_validation_config=config.get_validation_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 35, in get_validation_config
+    root_dir = config.root.dir,
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root'"
