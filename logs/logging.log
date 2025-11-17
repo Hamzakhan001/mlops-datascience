@@ -1,0 +1,164 @@
+[2025-11-17 12:28:02,931: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 12:28:02,939: INFO: common :yaml file: params.yaml loaded]
+[2025-11-17 12:43:54,830: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 12:43:54,837: INFO: common :yaml file: params.yaml loaded]
+[2025-11-17 13:37:15,785: INFO: main :Data Ingestion stage]
+[2025-11-17 13:37:15,785: ERROR: main :'DataIngestionTrainingPipeline' object is not callable]
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 9, in <module>
+    data_ingestion()
+TypeError: 'DataIngestionTrainingPipeline' object is not callable
+[2025-11-17 13:38:36,293: INFO: main :Data Ingestion stage]
+[2025-11-17 13:38:36,314: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 13:38:36,323: INFO: common :yaml file: params.yaml loaded]
+[2025-11-17 13:38:36,324: ERROR: main :yaml file is empty]
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\utils\common.py", line 29, in read_yaml
+    return ConfigBox(content)
+  File "box\\box.py", line 283, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_ingestion_pipeline.py", line 14, in initiate_data_ingestion
+    config= ConfigurationManager()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 10, in __init__
+    self.params= read_yaml(params_filepath)
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\utils\common.py", line 31, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-11-17 13:40:11,178: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 13:40:11,180: INFO: common :yaml file: params.yaml loaded]
+[2025-11-17 13:47:15,474: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 13:47:15,476: INFO: common :yaml file: params.yaml loaded]
+[2025-11-17 13:48:36,216: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 13:48:36,218: INFO: common :yaml file: params.yaml loaded]
+[2025-11-17 14:00:20,971: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 14:00:20,973: INFO: common :yaml file: params.yaml loaded]
+[2025-11-17 14:00:33,999: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 14:00:34,001: INFO: common :yaml file: params.yaml loaded]
+[2025-11-17 14:00:57,565: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 14:00:57,568: INFO: common :yaml file: params.yaml loaded]
+[2025-11-17 14:00:57,585: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-17 14:03:59,446: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 14:03:59,450: INFO: common :yaml file: params.yaml loaded]
+[2025-11-17 14:04:16,470: INFO: main :Data Ingestion stage]
+[2025-11-17 14:04:16,471: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 14:04:16,472: ERROR: common :Error reading yaml file: params.yaml]
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\utils\common.py", line 30, in read_yaml
+    raise ValueError(f"YAML content must be a mapping/dict. File: {path_to_yaml}, got: {type(content)}")
+ValueError: YAML content must be a mapping/dict. File: params.yaml, got: <class 'str'>
+[2025-11-17 14:04:16,472: ERROR: main :YAML content must be a mapping/dict. File: params.yaml, got: <class 'str'>]
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_ingestion_pipeline.py", line 14, in initiate_data_ingestion
+    config= ConfigurationManager()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 10, in __init__
+    self.params= read_yaml(params_filepath)
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\utils\common.py", line 30, in read_yaml
+    raise ValueError(f"YAML content must be a mapping/dict. File: {path_to_yaml}, got: {type(content)}")
+ValueError: YAML content must be a mapping/dict. File: params.yaml, got: <class 'str'>
+[2025-11-17 14:07:22,903: INFO: main :Data Ingestion stage]
+[2025-11-17 14:07:22,904: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 14:07:22,904: ERROR: common :Error reading yaml file: params.yaml]
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\utils\common.py", line 30, in read_yaml
+    raise ValueError(f"YAML content must be a mapping/dict. File: {path_to_yaml}, got: {type(content)}")
+ValueError: YAML content must be a mapping/dict. File: params.yaml, got: <class 'str'>
+[2025-11-17 14:07:22,906: ERROR: main :YAML content must be a mapping/dict. File: params.yaml, got: <class 'str'>]
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_ingestion_pipeline.py", line 14, in initiate_data_ingestion
+    config= ConfigurationManager()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 10, in __init__
+    self.params= read_yaml(params_filepath)
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\utils\common.py", line 30, in read_yaml
+    raise ValueError(f"YAML content must be a mapping/dict. File: {path_to_yaml}, got: {type(content)}")
+ValueError: YAML content must be a mapping/dict. File: params.yaml, got: <class 'str'>
+[2025-11-17 14:12:48,055: INFO: main :Data Ingestion stage]
+[2025-11-17 14:12:48,056: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 14:12:48,059: INFO: common :yaml file: params.yaml loaded]
+[2025-11-17 14:12:48,061: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-17 14:12:48,062: INFO: common :created directory at:artifacts]
+[2025-11-17 14:12:48,062: ERROR: main :'str' object has no attribute 'root_dir']
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion_config=config.get_data_ingestion_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 18, in get_data_ingestion_config
+    create_directories([config.root_dir])
+AttributeError: 'str' object has no attribute 'root_dir'
+[2025-11-17 14:16:29,364: INFO: main :Data Ingestion stage]
+[2025-11-17 14:16:29,364: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 14:16:29,364: INFO: common :yaml file: params.yaml loaded]
+[2025-11-17 14:16:29,364: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-17 14:16:29,364: INFO: common :created directory at:artifacts]
+[2025-11-17 14:16:29,364: ERROR: main :'str' object has no attribute 'root_dir']
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion_config=config.get_data_ingestion_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 19, in get_data_ingestion_config
+    create_directories([config.root_dir])
+AttributeError: 'str' object has no attribute 'root_dir'
+[2025-11-17 14:21:18,701: INFO: main :Data Ingestion stage]
+[2025-11-17 14:21:18,717: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 14:21:18,717: INFO: common :yaml file: params.yaml loaded]
+[2025-11-17 14:21:18,717: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-17 14:21:18,717: INFO: common :created directory at:artifacts]
+[2025-11-17 14:21:18,717: ERROR: main :'str' object has no attribute 'root_dir']
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion_config=config.get_data_ingestion_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 19, in get_data_ingestion_config
+    create_directories([config.root_dir])
+AttributeError: 'str' object has no attribute 'root_dir'
+[2025-11-17 14:23:58,597: INFO: main :Data Ingestion stage]
+[2025-11-17 14:23:58,613: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-17 14:23:58,623: INFO: common :yaml file: params.yaml loaded]
+[2025-11-17 14:23:58,626: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-17 14:23:58,627: INFO: common :created directory at:artifacts]
+[2025-11-17 14:23:58,628: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-17 14:23:59,229: INFO: data_ingeation :artifacts/data_ingestion/data.zip download! with following info 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: F9B2:1361F:88F75:D327A:691B2FFE
+Accept-Ranges: bytes
+Date: Mon, 17 Nov 2025 14:24:00 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lcy-egml8630031-LCY
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1763389440.892761,VS0,VE145
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: f7d4673bb7980b6aadfd269b0f940988e5567038
+Expires: Mon, 17 Nov 2025 14:29:00 GMT
+Source-Age: 0
+
+]

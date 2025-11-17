@@ -13,25 +13,31 @@ from box.exceptions import BoxValueError
 @ensure_annotations
 def read_yaml(path_to_yaml:Path) -> ConfigBox:
     """
-    reads yaml file and returns
-    
-    Args:
-        path_to_yaml (str): path like input
-
-    Raises:
-        ValueError: if yaml file is empty
+    reads yaml file and returns ConfigBox. Raises clear errors with file path.
     """
-    
     try:
-        with open(path_to_yaml) as yaml_file:
-            content=yaml.safe_load(yaml_file)
-            logger.info(f"yaml file: {path_to_yaml} loaded")
-            return ConfigBox(content)
-    except BoxValueError:
-        raise ValueError("yaml file is empty")
-    except Exception as e:
-        raise e
-    
+        path_to_yaml = Path(path_to_yaml)
+        if not path_to_yaml.exists():
+            raise FileNotFoundError(f"YAML file not found: {path_to_yaml}")
+
+        with open(path_to_yaml, 'r', encoding='utf-8') as yaml_file:
+            content = yaml.safe_load(yaml_file)
+
+        if content is None:
+            raise ValueError(f"YAML file is empty: {path_to_yaml}")
+
+        if not isinstance(content, dict):
+            raise ValueError(f"YAML content must be a mapping/dict. File: {path_to_yaml}, got: {type(content)}")
+
+        logger.info(f"yaml file: {path_to_yaml} loaded")
+        return ConfigBox(content)
+
+    except BoxValueError as e:
+        logger.exception(f"BoxValueError converting YAML to ConfigBox: {path_to_yaml} -- {e}")
+        raise ValueError(f"Failed to convert yaml to ConfigBox: {path_to_yaml}") from e
+    except Exception:
+        logger.exception(f"Error reading yaml file: {path_to_yaml}")
+        raise
     
 @ensure_annotations
 def create_directories(path_to_directories:list, verbose=True):
