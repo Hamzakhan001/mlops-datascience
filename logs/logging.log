@@ -162,3 +162,456 @@ Expires: Mon, 17 Nov 2025 14:29:00 GMT
 Source-Age: 0
 
 ]
+[2025-11-18 10:16:04,234: INFO: main :Data Ingestion stage]
+[2025-11-18 10:16:04,237: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:16:04,247: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:16:04,252: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:16:04,252: INFO: common :created directory at:artifacts]
+[2025-11-18 10:16:04,252: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 10:16:04,252: INFO: data_ingeation :Rile already exists]
+[2025-11-18 10:16:04,252: INFO: main :Data Validation stage]
+[2025-11-18 10:16:04,252: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:16:04,268: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:16:04,268: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:16:04,268: INFO: common :created directory at:artifacts]
+[2025-11-18 10:16:04,268: ERROR: main :"'ConfigBox' object has no attribute 'root'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 22, in <module>
+    data_validation.initiate_data_validation()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_validation_pipeline.py", line 15, in initiate_data_validation
+    data_validation_config=config.get_validation_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 35, in get_validation_config
+    root_dir = config.root.dir,
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'root'"
+[2025-11-18 10:17:52,358: INFO: main :Data Ingestion stage]
+[2025-11-18 10:17:52,360: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:17:52,361: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:17:52,364: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:17:52,364: INFO: common :created directory at:artifacts]
+[2025-11-18 10:17:52,365: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 10:17:52,365: INFO: data_ingeation :Rile already exists]
+[2025-11-18 10:17:52,368: INFO: main :Data Validation stage]
+[2025-11-18 10:17:52,370: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:17:52,370: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:17:52,373: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:17:52,373: INFO: common :created directory at:artifacts]
+[2025-11-18 10:17:52,373: ERROR: main :"'ConfigBox' object has no attribute 'status_file'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'STATUS_FILE'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'STATUS_FILE'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'STATUS_FILE'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'STATUS_FILE'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'status_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'status_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'status_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 22, in <module>
+    data_validation.initiate_data_validation()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_validation_pipeline.py", line 15, in initiate_data_validation
+    data_validation_config=config.get_validation_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 36, in get_validation_config
+    STATUS_FILE=config.STATUS_FILE,
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'status_file'"
+[2025-11-18 10:20:15,223: INFO: main :Data Ingestion stage]
+[2025-11-18 10:20:15,233: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:20:15,233: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:20:15,233: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:20:15,233: INFO: common :created directory at:artifacts]
+[2025-11-18 10:20:15,233: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 10:20:15,233: INFO: data_ingeation :Rile already exists]
+[2025-11-18 10:20:15,239: INFO: main :Data Validation stage]
+[2025-11-18 10:20:15,239: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:20:15,239: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:20:15,239: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:20:15,239: INFO: common :created directory at:artifacts]
+[2025-11-18 10:20:15,239: ERROR: main :"'ConfigBox' object has no attribute 'status_file'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'STATUS_FILE'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'STATUS_FILE'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'STATUS_FILE'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'STATUS_FILE'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'status_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'status_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'status_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 22, in <module>
+    data_validation.initiate_data_validation()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_validation_pipeline.py", line 15, in initiate_data_validation
+    data_validation_config=config.get_validation_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 36, in get_validation_config
+    STATUS_FILE=config.STATUS_FILE,
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'status_file'"
+[2025-11-18 10:21:53,616: INFO: main :Data Ingestion stage]
+[2025-11-18 10:21:53,632: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:21:53,632: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:21:53,632: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:21:53,647: INFO: common :created directory at:artifacts]
+[2025-11-18 10:21:53,647: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 10:21:53,647: INFO: data_ingeation :Rile already exists]
+[2025-11-18 10:21:53,647: INFO: main :Data Validation stage]
+[2025-11-18 10:21:53,647: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:21:53,647: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:21:53,647: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:21:53,647: INFO: common :created directory at:artifacts]
+[2025-11-18 10:21:53,647: ERROR: main :"'ConfigBox' object has no attribute 'unzip_data_dir'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'unzip_data_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'unzip_data_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'unzip_data_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 22, in <module>
+    data_validation.initiate_data_validation()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_validation_pipeline.py", line 15, in initiate_data_validation
+    data_validation_config=config.get_validation_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 37, in get_validation_config
+    unzip_data_dir = config.unzip_data_dir,
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'unzip_data_dir'"
+[2025-11-18 10:22:27,143: INFO: main :Data Ingestion stage]
+[2025-11-18 10:22:27,146: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:22:27,147: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:22:27,150: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:22:27,150: INFO: common :created directory at:artifacts]
+[2025-11-18 10:22:27,151: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 10:22:27,151: INFO: data_ingeation :Rile already exists]
+[2025-11-18 10:22:27,154: INFO: main :Data Validation stage]
+[2025-11-18 10:22:27,156: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:22:27,157: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:22:27,159: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:22:27,160: INFO: common :created directory at:artifacts]
+[2025-11-18 10:22:27,161: ERROR: main :"'ConfigBox' object has no attribute 'unzip_data_dir'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'unzip_data_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'unzip_data_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'unzip_data_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 22, in <module>
+    data_validation.initiate_data_validation()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_validation_pipeline.py", line 15, in initiate_data_validation
+    data_validation_config=config.get_validation_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 37, in get_validation_config
+    unzip_data_dir = config.unzip_data_dir,
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'unzip_data_dir'"
+[2025-11-18 10:26:59,526: INFO: main :Data Ingestion stage]
+[2025-11-18 10:26:59,529: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:26:59,530: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:26:59,533: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:26:59,534: INFO: common :created directory at:artifacts]
+[2025-11-18 10:26:59,534: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 10:26:59,534: INFO: data_ingeation :Rile already exists]
+[2025-11-18 10:26:59,537: INFO: main :Data Validation stage]
+[2025-11-18 10:26:59,539: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:26:59,540: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:26:59,543: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:26:59,543: INFO: common :created directory at:artifacts]
+[2025-11-18 10:26:59,543: ERROR: main :'DataValidationConfig' object has no attribute 'unzip_data_dir']
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 22, in <module>
+    data_validation.initiate_data_validation()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_validation_pipeline.py", line 17, in initiate_data_validation
+    data_validation.validate_all_columns()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\components\data_validation.py", line 33, in validate_all_columns
+    raise e
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\components\data_validation.py", line 16, in validate_all_columns
+    data = pd.read_csv(self.config.unzip_data_dir)
+AttributeError: 'DataValidationConfig' object has no attribute 'unzip_data_dir'
+[2025-11-18 10:27:53,595: INFO: main :Data Ingestion stage]
+[2025-11-18 10:27:53,597: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:27:53,598: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:27:53,600: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:27:53,601: INFO: common :created directory at:artifacts]
+[2025-11-18 10:27:53,602: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 10:27:53,602: INFO: data_ingeation :Rile already exists]
+[2025-11-18 10:27:53,604: INFO: main :Data Validation stage]
+[2025-11-18 10:27:53,607: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:27:53,608: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:27:53,610: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:27:53,611: INFO: common :created directory at:artifacts]
+[2025-11-18 10:27:53,613: ERROR: main :[Errno 2] No such file or directory: 'artifacts/data_validation/status.txt']
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 22, in <module>
+    data_validation.initiate_data_validation()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_validation_pipeline.py", line 17, in initiate_data_validation
+    data_validation.validate_all_columns()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\components\data_validation.py", line 33, in validate_all_columns
+    raise e
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\components\data_validation.py", line 16, in validate_all_columns
+    data = pd.read_csv(self.config.unzip_dir)
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_validation/status.txt'
+[2025-11-18 10:30:57,618: INFO: main :Data Ingestion stage]
+[2025-11-18 10:30:57,632: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:30:57,632: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:30:57,636: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:30:57,637: INFO: common :created directory at:artifacts]
+[2025-11-18 10:30:57,638: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 10:30:57,638: INFO: data_ingeation :Rile already exists]
+[2025-11-18 10:30:57,641: INFO: main :Data Validation stage]
+[2025-11-18 10:30:57,643: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:30:57,644: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:30:57,647: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:30:57,648: INFO: common :created directory at:artifacts]
+[2025-11-18 10:30:57,649: ERROR: main :[Errno 2] No such file or directory: 'artifacts/data_validation/status.txt']
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 22, in <module>
+    data_validation.initiate_data_validation()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_validation_pipeline.py", line 17, in initiate_data_validation
+    data_validation.validate_all_columns()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\components\data_validation.py", line 33, in validate_all_columns
+    raise e
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\components\data_validation.py", line 16, in validate_all_columns
+    data = pd.read_csv(self.config.unzip_data_dir)
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_validation/status.txt'
+[2025-11-18 10:50:30,376: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:50:30,378: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:50:30,382: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:50:30,384: INFO: common :created directory at:artifacts]
+[2025-11-18 10:50:57,332: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:50:57,334: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:50:57,338: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:50:57,340: INFO: common :created directory at:artifacts]
+[2025-11-18 10:52:54,713: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:52:54,715: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:52:54,720: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:52:54,721: INFO: common :created directory at:artifacts]
+[2025-11-18 10:53:03,850: INFO: main :Data Ingestion stage]
+[2025-11-18 10:53:03,853: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:53:03,854: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:53:03,856: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:53:03,857: INFO: common :created directory at:artifacts]
+[2025-11-18 10:53:03,857: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 10:53:03,858: INFO: data_ingeation :Rile already exists]
+[2025-11-18 10:53:03,860: INFO: main :Data Validation stage]
+[2025-11-18 10:53:03,863: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 10:53:03,864: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 10:53:03,866: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 10:53:03,867: INFO: common :created directory at:artifacts]
