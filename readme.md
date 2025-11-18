@@ -26,20 +26,20 @@ Key principles: modular components, YAML configuration, dataclass config entitie
 Mermaid (renders on platforms that support Mermaid):
 
 ```mermaid
-graph TD
-  U[(User / CI)] -->|run main.py| Orchestrator[main.py Orchestrator]
-  Orchestrator --> Config[ConfigurationManager (read_yaml)]
-  Config -->|provides configs| PipelineManager[Pipeline Stages]
+flowchart TD
+  U[User / CI] -->|run main.py| Orchestrator[Orchestrator: main.py]
+  Orchestrator --> Config[ConfigurationManager]
+  Config --> PipelineManager[Pipeline Stages]
   PipelineManager --> DI[Data Ingestion]
   PipelineManager --> DV[Data Validation]
   PipelineManager --> DT[Data Transformation]
   PipelineManager --> MT[Model Trainer]
   PipelineManager --> ME[Model Evaluation]
-  DI -->|downloads ZIP -> extracts CSV| ArtifactsRaw[artifacts/data_ingestion]
-  DV -->|reads CSV, writes status| ArtifactsVal[artifacts/data_validation]
-  DT -->|splits -> train/test| ArtifactsTrans[artifacts/data_transformation]
-  MT -->|trains -> model artifact| ArtifactsModel[artifacts/model_trainer]
-  ME -->|evaluates -> metrics & mlflow| ArtifactsEval[artifacts/model_evaluation]
+  DI -->|download & extract| ArtifactsRaw[artifacts/data_ingestion]
+  DV -->|validate| ArtifactsVal[artifacts/data_validation]
+  DT -->|split / fe| ArtifactsTrans[artifacts/data_transformation]
+  MT -->|train -> model| ArtifactsModel[artifacts/model_trainer]
+  ME -->|evaluate -> mlflow| ArtifactsEval[artifacts/model_evaluation]
   ArtifactsModel --> MLFlow[MLflow / Model Registry]
 ```
 
