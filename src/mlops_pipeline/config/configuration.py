@@ -51,10 +51,11 @@ class ConfigurationManager:
         return data_transformation_config
     
     def get_model_trainer_config(self) -> ModelTrainerConfig:
+        print("ALPHABETACHARLIE",self.params['ElasticNet'])
         config= self.config.model_trainer
         params = self.params.ElasticNet
         schema = self.schema.TARGET_COLUMN
-        create_directories([self.config.artifacts_root])
+        create_directories([config.root_dir])
         
         
         model_trainer_config = ModelTrainerConfig(

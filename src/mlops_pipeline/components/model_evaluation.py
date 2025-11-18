@@ -26,10 +26,10 @@ class ModelEvaluation:
         test_data = pd.read_csv(self.config.test_data_path)
         model = joblib.load(self.config.model_path)
         
-        test_x= test.data.drop([self.config.target_column],axis=1)
+        test_x= test_data.drop([self.config.target_column],axis=1)
         test_y = test_data[[self.config.target_column]]
         
-        mlflow.set_registry_uri(self.config.mlflow_uri)
+        mlflow.set_registry_uri(self.config.mlflow_url)
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
         
         with mlflow.start_run():

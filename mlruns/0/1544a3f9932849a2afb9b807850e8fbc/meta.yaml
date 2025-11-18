@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/pc/Desktop/ai/mlops-datascience/mlruns/0/1544a3f9932849a2afb9b807850e8fbc/artifacts
+end_time: 1763472508665
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1544a3f9932849a2afb9b807850e8fbc
+run_name: suave-shoat-711
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763472497250
+status: 3
+tags: []
+user_id: pc

@@ -627,3 +627,1078 @@ FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_validati
 [2025-11-18 10:57:29,480: INFO: common :yaml file: params.yaml loaded]
 [2025-11-18 10:57:29,483: INFO: common :yaml file: schema.yaml loaded]
 [2025-11-18 10:57:29,483: INFO: common :created directory at:artifacts]
+[2025-11-18 11:24:47,749: INFO: main :Data Ingestion stage]
+[2025-11-18 11:24:47,769: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:24:47,774: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:24:47,779: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:24:47,780: INFO: common :created directory at:artifacts]
+[2025-11-18 11:24:47,780: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 11:24:47,780: INFO: data_ingeation :Rile already exists]
+[2025-11-18 11:24:47,786: INFO: main :Data Validation stage]
+[2025-11-18 11:24:47,792: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:24:47,794: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:24:47,798: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:24:47,799: INFO: common :created directory at:artifacts]
+[2025-11-18 11:24:47,800: ERROR: main :"'ConfigBox' object has no attribute 'status_file'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'STATUS_FILE'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'STATUS_FILE'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'STATUS_FILE'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'STATUS_FILE'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'status_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'status_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'status_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 25, in <module>
+    data_validation.initiate_data_validation()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_validation_pipeline.py", line 15, in initiate_data_validation
+    data_validation_config=config.get_validation_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 36, in get_validation_config
+    STATUS_FILE=config.STATUS_FILE,
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'status_file'"
+[2025-11-18 11:29:34,607: INFO: main :Data Ingestion stage]
+[2025-11-18 11:29:34,634: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:29:34,637: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:29:34,646: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:29:34,647: INFO: common :created directory at:artifacts]
+[2025-11-18 11:29:34,648: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 11:29:34,648: INFO: data_ingeation :Rile already exists]
+[2025-11-18 11:29:34,654: INFO: main :Data Validation stage]
+[2025-11-18 11:29:34,661: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:29:34,663: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:29:34,668: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:29:34,670: INFO: common :created directory at:artifacts]
+[2025-11-18 11:29:34,670: ERROR: main :"'ConfigBox' object has no attribute 'unzip_data_dir'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'unzip_data_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'unzip_data_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'unzip_data_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 25, in <module>
+    data_validation.initiate_data_validation()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_validation_pipeline.py", line 15, in initiate_data_validation
+    data_validation_config=config.get_validation_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 37, in get_validation_config
+    unzip_data_dir = config.unzip_data_dir,
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'unzip_data_dir'"
+[2025-11-18 11:30:25,707: INFO: main :Data Ingestion stage]
+[2025-11-18 11:30:25,732: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:30:25,734: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:30:25,739: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:30:25,741: INFO: common :created directory at:artifacts]
+[2025-11-18 11:30:25,741: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 11:30:25,742: INFO: data_ingeation :Rile already exists]
+[2025-11-18 11:30:25,745: INFO: main :Data Validation stage]
+[2025-11-18 11:30:25,753: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:30:25,755: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:30:25,759: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:30:25,760: INFO: common :created directory at:artifacts]
+[2025-11-18 11:30:25,789: INFO: main :Data Transformation stage]
+[2025-11-18 11:30:25,797: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:30:25,800: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:30:25,804: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:30:25,805: INFO: common :created directory at:artifacts]
+[2025-11-18 11:30:25,813: INFO: common :created directory at:artifacts/data_transformation]
+[2025-11-18 11:30:25,844: ERROR: main :NDFrame.to_csv() got an unexpected keyword argument 'Index']
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 36, in <module>
+    data_transformation.initiate_data_transformation()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_transformation_pipeline.py", line 31, in initiate_data_transformation
+    raise e
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\data_transformation_pipeline.py", line 25, in initiate_data_transformation
+    data_transformation.train_test_splitting()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\components\data_transformation.py", line 17, in train_test_splitting
+    test.to_csv(os.path.join(self.config.root_dir,"test.csv"),Index=False)
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+TypeError: NDFrame.to_csv() got an unexpected keyword argument 'Index'
+[2025-11-18 11:34:10,160: INFO: main :Data Ingestion stage]
+[2025-11-18 11:34:10,169: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:34:10,171: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:34:10,176: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:34:10,177: INFO: common :created directory at:artifacts]
+[2025-11-18 11:34:10,177: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 11:34:10,178: INFO: data_ingeation :Rile already exists]
+[2025-11-18 11:34:10,182: INFO: main :Data Validation stage]
+[2025-11-18 11:34:10,190: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:34:10,193: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:34:10,197: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:34:10,198: INFO: common :created directory at:artifacts]
+[2025-11-18 11:34:10,232: INFO: main :Data Transformation stage]
+[2025-11-18 11:34:10,241: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:34:10,243: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:34:10,246: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:34:10,248: INFO: common :created directory at:artifacts]
+[2025-11-18 11:34:10,248: INFO: common :created directory at:artifacts/data_transformation]
+[2025-11-18 11:34:10,281: INFO: data_transformation :Splitted data into training and test sets]
+[2025-11-18 11:34:10,282: INFO: data_transformation :(1199, 12)]
+[2025-11-18 11:34:10,282: INFO: data_transformation :(400, 12)]
+[2025-11-18 11:34:10,283: INFO: main :Model Trainer stage]
+[2025-11-18 11:34:10,290: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:34:10,292: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:34:10,296: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:34:10,298: INFO: common :created directory at:artifacts]
+[2025-11-18 11:34:10,298: INFO: common :created directory at:artifacts]
+[2025-11-18 11:34:10,299: ERROR: main :"'ConfigBox' object has no attribute 'test_data_path'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'test_data_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'test_data_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'test_data_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'test_data_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'test_data_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'test_data_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'test_data_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 48, in <module>
+    model_transformation.initiate_model_training()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\mode_trainer_pipeline.py", line 14, in initiate_model_training
+    model_trainer_config=config.get_model_trainer_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 63, in get_model_trainer_config
+    test_data_path= config.test_data_path,
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'test_data_path'"
+[2025-11-18 11:36:16,327: INFO: main :Data Ingestion stage]
+[2025-11-18 11:36:16,352: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:36:16,355: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:36:16,359: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:36:16,360: INFO: common :created directory at:artifacts]
+[2025-11-18 11:36:16,361: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 11:36:16,361: INFO: data_ingeation :Rile already exists]
+[2025-11-18 11:36:16,365: INFO: main :Data Validation stage]
+[2025-11-18 11:36:16,373: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:36:16,376: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:36:16,380: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:36:16,381: INFO: common :created directory at:artifacts]
+[2025-11-18 11:36:16,412: INFO: main :Data Transformation stage]
+[2025-11-18 11:36:16,422: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:36:16,424: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:36:16,427: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:36:16,428: INFO: common :created directory at:artifacts]
+[2025-11-18 11:36:16,428: INFO: common :created directory at:artifacts/data_transformation]
+[2025-11-18 11:36:16,465: INFO: data_transformation :Splitted data into training and test sets]
+[2025-11-18 11:36:16,465: INFO: data_transformation :(1199, 12)]
+[2025-11-18 11:36:16,466: INFO: data_transformation :(400, 12)]
+[2025-11-18 11:36:16,467: INFO: main :Model Trainer stage]
+[2025-11-18 11:36:16,475: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:36:16,477: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:36:16,481: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:36:16,482: INFO: common :created directory at:artifacts]
+[2025-11-18 11:36:16,483: INFO: common :created directory at:artifacts]
+[2025-11-18 11:36:16,483: ERROR: main :"'ConfigBox' object has no attribute 'alpha'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 48, in <module>
+    model_transformation.initiate_model_training()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\mode_trainer_pipeline.py", line 14, in initiate_model_training
+    model_trainer_config=config.get_model_trainer_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 65, in get_model_trainer_config
+    alpha = params.alpha,
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'alpha'"
+[2025-11-18 11:38:34,117: INFO: main :Data Ingestion stage]
+[2025-11-18 11:38:34,133: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:38:34,133: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:38:34,133: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:38:34,133: INFO: common :created directory at:artifacts]
+[2025-11-18 11:38:34,133: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 11:38:34,133: INFO: data_ingeation :Rile already exists]
+[2025-11-18 11:38:34,148: INFO: main :Data Validation stage]
+[2025-11-18 11:38:34,148: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:38:34,148: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:38:34,164: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:38:34,164: INFO: common :created directory at:artifacts]
+[2025-11-18 11:38:34,195: INFO: main :Data Transformation stage]
+[2025-11-18 11:38:34,195: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:38:34,195: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:38:34,211: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:38:34,211: INFO: common :created directory at:artifacts]
+[2025-11-18 11:38:34,211: INFO: common :created directory at:artifacts/data_transformation]
+[2025-11-18 11:38:34,246: INFO: data_transformation :Splitted data into training and test sets]
+[2025-11-18 11:38:34,247: INFO: data_transformation :(1199, 12)]
+[2025-11-18 11:38:34,247: INFO: data_transformation :(400, 12)]
+[2025-11-18 11:38:34,248: INFO: main :Model Trainer stage]
+[2025-11-18 11:38:34,256: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:38:34,258: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:38:34,262: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:38:34,263: INFO: common :created directory at:artifacts]
+[2025-11-18 11:38:34,264: INFO: common :created directory at:artifacts]
+[2025-11-18 11:38:34,264: ERROR: main :"'ConfigBox' object has no attribute 'alpha'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 48, in <module>
+    model_transformation.initiate_model_training()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\mode_trainer_pipeline.py", line 14, in initiate_model_training
+    model_trainer_config=config.get_model_trainer_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 58, in get_model_trainer_config
+    print("ALPHABETACHARLIE",params.alpha)
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'alpha'"
+[2025-11-18 11:39:38,811: INFO: main :Data Ingestion stage]
+[2025-11-18 11:39:38,820: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:39:38,822: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:39:38,826: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:39:38,826: INFO: common :created directory at:artifacts]
+[2025-11-18 11:39:38,827: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 11:39:38,828: INFO: data_ingeation :Rile already exists]
+[2025-11-18 11:39:38,831: INFO: main :Data Validation stage]
+[2025-11-18 11:39:38,839: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:39:38,841: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:39:38,845: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:39:38,846: INFO: common :created directory at:artifacts]
+[2025-11-18 11:39:38,875: INFO: main :Data Transformation stage]
+[2025-11-18 11:39:38,884: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:39:38,885: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:39:38,889: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:39:38,889: INFO: common :created directory at:artifacts]
+[2025-11-18 11:39:38,890: INFO: common :created directory at:artifacts/data_transformation]
+[2025-11-18 11:39:38,920: INFO: data_transformation :Splitted data into training and test sets]
+[2025-11-18 11:39:38,921: INFO: data_transformation :(1199, 12)]
+[2025-11-18 11:39:38,921: INFO: data_transformation :(400, 12)]
+[2025-11-18 11:39:38,922: INFO: main :Model Trainer stage]
+[2025-11-18 11:39:38,929: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 11:39:38,932: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 11:39:38,935: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 11:39:38,936: INFO: common :created directory at:artifacts]
+[2025-11-18 11:39:38,936: ERROR: main :"'ConfigBox' object has no attribute 'alpha'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 48, in <module>
+    model_transformation.initiate_model_training()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\mode_trainer_pipeline.py", line 14, in initiate_model_training
+    model_trainer_config=config.get_model_trainer_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 54, in get_model_trainer_config
+    print("ALPHABETACHARLIE",self.params.alpha)
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'alpha'"
+[2025-11-18 11:44:45,973: INFO: 4002226260 :Model Trainer stage]
+[2025-11-18 11:44:45,975: ERROR: 4002226260 :name 'ModeltrainerTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\pc\AppData\Local\Temp\ipykernel_30148\4002226260.py", line 5, in <module>
+    model_transformation = ModeltrainerTrainingPipeline()
+NameError: name 'ModeltrainerTrainingPipeline' is not defined
+[2025-11-18 11:46:37,324: ERROR: 3119319871 :Argument path_to_yaml of type <class 'list'> to <function read_yaml at 0x0000019AF6467370> does not match annotation type <class 'pathlib.Path'>]
+Traceback (most recent call last):
+  File "C:\Users\pc\AppData\Local\Temp\ipykernel_30148\3119319871.py", line 4, in <module>
+    config = ConfigurationManager()
+  File "C:\Users\pc\AppData\Local\Temp\ipykernel_30148\3719525093.py", line 3, in __init__
+    self.config = read_yaml([config_filepath])
+  File "c:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\ensure\main.py", line 870, in __call__
+    raise EnsureError(msg.format(arg=arg, f=self.f, t=templ, valt=type(value)))
+ensure.main.EnsureError: Argument path_to_yaml of type <class 'list'> to <function read_yaml at 0x0000019AF6467370> does not match annotation type <class 'pathlib.Path'>
+[2025-11-18 12:27:06,591: INFO: main :Data Ingestion stage]
+[2025-11-18 12:27:06,599: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:27:06,601: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:27:06,605: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:27:06,606: INFO: common :created directory at:artifacts]
+[2025-11-18 12:27:06,607: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 12:27:06,607: INFO: data_ingeation :Rile already exists]
+[2025-11-18 12:27:06,612: INFO: main :Data Validation stage]
+[2025-11-18 12:27:06,620: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:27:06,621: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:27:06,625: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:27:06,626: INFO: common :created directory at:artifacts]
+[2025-11-18 12:27:06,656: INFO: main :Data Transformation stage]
+[2025-11-18 12:27:06,664: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:27:06,666: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:27:06,670: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:27:06,671: INFO: common :created directory at:artifacts]
+[2025-11-18 12:27:06,671: INFO: common :created directory at:artifacts/data_transformation]
+[2025-11-18 12:27:06,703: INFO: data_transformation :Splitted data into training and test sets]
+[2025-11-18 12:27:06,704: INFO: data_transformation :(1199, 12)]
+[2025-11-18 12:27:06,704: INFO: data_transformation :(400, 12)]
+[2025-11-18 12:27:06,705: INFO: main :Model Trainer stage]
+[2025-11-18 12:27:06,711: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:27:06,714: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:27:06,718: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:27:06,719: INFO: common :created directory at:artifacts]
+[2025-11-18 12:27:06,719: ERROR: main :"'ConfigBox' object has no attribute 'alpha'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 48, in <module>
+    model_transformation.initiate_model_training()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\mode_trainer_pipeline.py", line 14, in initiate_model_training
+    model_trainer_config=config.get_model_trainer_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 54, in get_model_trainer_config
+    print("ALPHABETACHARLIE",self.params.alpha)
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'alpha'"
+[2025-11-18 12:30:00,677: INFO: main :Data Ingestion stage]
+[2025-11-18 12:30:00,686: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:30:00,689: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:30:00,694: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:30:00,694: INFO: common :created directory at:artifacts]
+[2025-11-18 12:30:00,695: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 12:30:00,696: INFO: data_ingeation :Rile already exists]
+[2025-11-18 12:30:00,701: INFO: main :Data Validation stage]
+[2025-11-18 12:30:00,708: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:30:00,710: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:30:00,716: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:30:00,718: INFO: common :created directory at:artifacts]
+[2025-11-18 12:30:00,751: INFO: main :Data Transformation stage]
+[2025-11-18 12:30:00,760: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:30:00,762: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:30:00,767: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:30:00,768: INFO: common :created directory at:artifacts]
+[2025-11-18 12:30:00,769: INFO: common :created directory at:artifacts/data_transformation]
+[2025-11-18 12:30:00,805: INFO: data_transformation :Splitted data into training and test sets]
+[2025-11-18 12:30:00,805: INFO: data_transformation :(1199, 12)]
+[2025-11-18 12:30:00,806: INFO: data_transformation :(400, 12)]
+[2025-11-18 12:30:00,806: INFO: main :Model Trainer stage]
+[2025-11-18 12:30:00,814: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:30:00,816: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:30:00,820: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:30:00,821: INFO: common :created directory at:artifacts]
+[2025-11-18 12:30:00,822: INFO: common :created directory at:artifacts]
+[2025-11-18 12:30:00,822: ERROR: main :"'ConfigBox' object has no attribute 'alpha'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 48, in <module>
+    model_transformation.initiate_model_training()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\mode_trainer_pipeline.py", line 14, in initiate_model_training
+    model_trainer_config=config.get_model_trainer_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 66, in get_model_trainer_config
+    alpha = params.alpha,
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'alpha'"
+[2025-11-18 12:43:54,551: INFO: main :Data Ingestion stage]
+[2025-11-18 12:43:54,567: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:43:54,567: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:43:54,567: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:43:54,567: INFO: common :created directory at:artifacts]
+[2025-11-18 12:43:54,567: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 12:43:54,567: INFO: data_ingeation :Rile already exists]
+[2025-11-18 12:43:54,567: INFO: main :Data Validation stage]
+[2025-11-18 12:43:54,583: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:43:54,583: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:43:54,583: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:43:54,583: INFO: common :created directory at:artifacts]
+[2025-11-18 12:43:54,630: INFO: main :Data Transformation stage]
+[2025-11-18 12:43:54,630: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:43:54,630: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:43:54,630: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:43:54,630: INFO: common :created directory at:artifacts]
+[2025-11-18 12:43:54,646: INFO: common :created directory at:artifacts/data_transformation]
+[2025-11-18 12:43:54,677: INFO: data_transformation :Splitted data into training and test sets]
+[2025-11-18 12:43:54,677: INFO: data_transformation :(1199, 12)]
+[2025-11-18 12:43:54,677: INFO: data_transformation :(400, 12)]
+[2025-11-18 12:43:54,677: INFO: main :Model Trainer stage]
+[2025-11-18 12:43:54,677: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:43:54,677: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:43:54,693: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:43:54,693: INFO: common :created directory at:artifacts]
+[2025-11-18 12:43:54,693: INFO: common :created directory at:artifacts]
+[2025-11-18 12:43:54,693: ERROR: main :"'ConfigBox' object has no attribute 'alpha'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 48, in <module>
+    model_transformation.initiate_model_training()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\mode_trainer_pipeline.py", line 14, in initiate_model_training
+    model_trainer_config=config.get_model_trainer_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 66, in get_model_trainer_config
+    alpha = params.alpha,
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'alpha'"
+[2025-11-18 12:44:34,908: INFO: main :Data Ingestion stage]
+[2025-11-18 12:44:34,920: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:44:34,921: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:44:34,926: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:44:34,927: INFO: common :created directory at:artifacts]
+[2025-11-18 12:44:34,927: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 12:44:34,928: INFO: data_ingeation :Rile already exists]
+[2025-11-18 12:44:34,933: INFO: main :Data Validation stage]
+[2025-11-18 12:44:34,941: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:44:34,942: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:44:34,946: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:44:34,947: INFO: common :created directory at:artifacts]
+[2025-11-18 12:44:34,987: INFO: main :Data Transformation stage]
+[2025-11-18 12:44:34,998: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:44:35,001: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:44:35,006: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:44:35,007: INFO: common :created directory at:artifacts]
+[2025-11-18 12:44:35,007: INFO: common :created directory at:artifacts/data_transformation]
+[2025-11-18 12:44:35,037: INFO: data_transformation :Splitted data into training and test sets]
+[2025-11-18 12:44:35,037: INFO: data_transformation :(1199, 12)]
+[2025-11-18 12:44:35,038: INFO: data_transformation :(400, 12)]
+[2025-11-18 12:44:35,038: INFO: main :Model Trainer stage]
+[2025-11-18 12:44:35,044: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:44:35,047: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:44:35,052: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:44:35,053: INFO: common :created directory at:artifacts]
+[2025-11-18 12:44:35,054: INFO: common :created directory at:artifacts]
+[2025-11-18 12:44:35,054: ERROR: main :"'ConfigBox' object has no attribute 'alpha'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+  File "box\\box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'alpha'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'alpha'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 48, in <module>
+    model_transformation.initiate_model_training()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\mode_trainer_pipeline.py", line 14, in initiate_model_training
+    model_trainer_config=config.get_model_trainer_config()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\config\configuration.py", line 66, in get_model_trainer_config
+    alpha = params.alpha,
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'alpha'"
+[2025-11-18 12:48:24,091: INFO: main :Data Ingestion stage]
+[2025-11-18 12:48:24,099: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:48:24,113: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:48:24,119: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:48:24,120: INFO: common :created directory at:artifacts]
+[2025-11-18 12:48:24,122: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 12:48:24,122: INFO: data_ingeation :Rile already exists]
+[2025-11-18 12:48:24,126: INFO: main :Data Validation stage]
+[2025-11-18 12:48:24,134: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:48:24,137: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:48:24,141: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:48:24,142: INFO: common :created directory at:artifacts]
+[2025-11-18 12:48:24,173: INFO: main :Data Transformation stage]
+[2025-11-18 12:48:24,182: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:48:24,184: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:48:24,189: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:48:24,190: INFO: common :created directory at:artifacts]
+[2025-11-18 12:48:24,191: INFO: common :created directory at:artifacts/data_transformation]
+[2025-11-18 12:48:24,223: INFO: data_transformation :Splitted data into training and test sets]
+[2025-11-18 12:48:24,224: INFO: data_transformation :(1199, 12)]
+[2025-11-18 12:48:24,224: INFO: data_transformation :(400, 12)]
+[2025-11-18 12:48:24,225: INFO: main :Model Trainer stage]
+[2025-11-18 12:48:24,232: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:48:24,234: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:48:24,238: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:48:24,239: INFO: common :created directory at:artifacts]
+[2025-11-18 12:48:24,240: INFO: common :created directory at:artifacts]
+[2025-11-18 12:48:24,291: ERROR: main :'DataFrame' object is not callable]
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 48, in <module>
+    model_transformation.initiate_model_training()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\mode_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer.train()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\components\model_trainer.py", line 21, in train
+    train_y= train_data([self.config.target_column])
+TypeError: 'DataFrame' object is not callable
+[2025-11-18 12:55:12,266: INFO: main :Data Ingestion stage]
+[2025-11-18 12:55:12,275: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:55:12,277: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:55:12,281: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:55:12,282: INFO: common :created directory at:artifacts]
+[2025-11-18 12:55:12,284: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 12:55:12,284: INFO: data_ingeation :Rile already exists]
+[2025-11-18 12:55:12,290: INFO: main :Data Validation stage]
+[2025-11-18 12:55:12,297: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:55:12,299: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:55:12,304: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:55:12,306: INFO: common :created directory at:artifacts]
+[2025-11-18 12:55:12,333: INFO: main :Data Transformation stage]
+[2025-11-18 12:55:12,343: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:55:12,345: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:55:12,349: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:55:12,350: INFO: common :created directory at:artifacts]
+[2025-11-18 12:55:12,350: INFO: common :created directory at:artifacts/data_transformation]
+[2025-11-18 12:55:12,383: INFO: data_transformation :Splitted data into training and test sets]
+[2025-11-18 12:55:12,383: INFO: data_transformation :(1199, 12)]
+[2025-11-18 12:55:12,385: INFO: data_transformation :(400, 12)]
+[2025-11-18 12:55:12,385: INFO: main :Model Trainer stage]
+[2025-11-18 12:55:12,393: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 12:55:12,395: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 12:55:12,399: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 12:55:12,399: INFO: common :created directory at:artifacts]
+[2025-11-18 12:55:12,400: INFO: common :created directory at:artifacts]
+[2025-11-18 12:55:12,457: ERROR: main :[Errno 2] No such file or directory: 'artifacts/model_trainer\\model.joblib']
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 48, in <module>
+    model_transformation.initiate_model_training()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\mode_trainer_pipeline.py", line 16, in initiate_model_training
+    model_trainer.train()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\components\model_trainer.py", line 27, in train
+    joblib.dump(lr,os.path.join(self.config.root_dir,self.config.model_name))
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\joblib\numpy_pickle.py", line 599, in dump
+    with open(filename, "wb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/model_trainer\\model.joblib'
+[2025-11-18 13:14:11,467: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:14:11,471: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:14:11,479: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:14:11,482: INFO: common :created directory at:artifacts]
+[2025-11-18 13:14:11,485: INFO: common :created directory at:artifacts]
+[2025-11-18 13:14:11,512: ERROR: 3119319871 :[Errno 2] No such file or directory: 'artifacts/model_trainer\\model.joblib']
+Traceback (most recent call last):
+  File "C:\Users\pc\AppData\Local\Temp\ipykernel_27852\3119319871.py", line 7, in <module>
+    data_validation.train()
+  File "C:\Users\pc\AppData\Local\Temp\ipykernel_27852\3990127288.py", line 25, in train
+    joblib.dump(lr,os.path.join(self.config.root_dir,self.config.model_name))
+  File "c:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\joblib\numpy_pickle.py", line 599, in dump
+    with open(filename, "wb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/model_trainer\\model.joblib'
+[2025-11-18 13:20:05,590: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:20:05,594: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:20:05,601: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:20:05,611: INFO: common :created directory at:artifacts]
+[2025-11-18 13:20:05,616: INFO: common :created directory at:artifacts]
+[2025-11-18 13:20:05,640: ERROR: 867826590 :[Errno 2] No such file or directory: 'artifacts/model_trainer\\model.joblib']
+Traceback (most recent call last):
+  File "C:\Users\pc\AppData\Local\Temp\ipykernel_27852\867826590.py", line 82, in <module>
+    data_validation.train()
+  File "C:\Users\pc\AppData\Local\Temp\ipykernel_27852\867826590.py", line 73, in train
+    joblib.dump(lr,os.path.join(self.config.root_dir,self.config.model_name))
+  File "c:\Users\pc\Desktop\ai\mlops-datascience\venv\lib\site-packages\joblib\numpy_pickle.py", line 599, in dump
+    with open(filename, "wb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/model_trainer\\model.joblib'
+[2025-11-18 13:20:55,454: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:20:55,465: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:20:55,471: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:20:55,473: INFO: common :created directory at:artifacts]
+[2025-11-18 13:20:55,481: ERROR: 3949965930 :'ConfigurationManager' object has no attribute 'root_dir']
+Traceback (most recent call last):
+  File "C:\Users\pc\AppData\Local\Temp\ipykernel_27852\3949965930.py", line 80, in <module>
+    data_validation_config = config.get_model_trainer_config()
+  File "C:\Users\pc\AppData\Local\Temp\ipykernel_27852\3949965930.py", line 38, in get_model_trainer_config
+    create_directories([self.root_dir])
+AttributeError: 'ConfigurationManager' object has no attribute 'root_dir'
+[2025-11-18 13:21:42,232: INFO: main :Data Ingestion stage]
+[2025-11-18 13:21:42,242: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:21:42,245: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:21:42,250: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:21:42,252: INFO: common :created directory at:artifacts]
+[2025-11-18 13:21:42,252: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 13:21:42,253: INFO: data_ingeation :Rile already exists]
+[2025-11-18 13:21:42,259: INFO: main :Data Validation stage]
+[2025-11-18 13:21:42,268: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:21:42,270: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:21:42,273: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:21:42,274: INFO: common :created directory at:artifacts]
+[2025-11-18 13:21:42,311: INFO: main :Data Transformation stage]
+[2025-11-18 13:21:42,322: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:21:42,324: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:21:42,329: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:21:42,329: INFO: common :created directory at:artifacts]
+[2025-11-18 13:21:42,330: INFO: common :created directory at:artifacts/data_transformation]
+[2025-11-18 13:21:42,365: INFO: data_transformation :Splitted data into training and test sets]
+[2025-11-18 13:21:42,365: INFO: data_transformation :(1199, 12)]
+[2025-11-18 13:21:42,365: INFO: data_transformation :(400, 12)]
+[2025-11-18 13:21:42,365: INFO: main :Model Trainer stage]
+[2025-11-18 13:21:42,381: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:21:42,381: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:21:42,381: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:21:42,381: INFO: common :created directory at:artifacts]
+[2025-11-18 13:21:42,381: INFO: common :created directory at:artifacts/model_trainer]
+[2025-11-18 13:21:42,428: INFO: main :Model Evaluation stage]
+[2025-11-18 13:21:42,444: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:21:42,444: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:21:42,444: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:21:42,444: INFO: common :created directory at:artifacts]
+[2025-11-18 13:21:42,444: INFO: common :created directory at:artifacts/model_evaluation]
+[2025-11-18 13:21:42,460: ERROR: main :name 'test' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 61, in <module>
+    model_evaluation.initiate_model_evaluation()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\model_evaluation_pipeline.py", line 16, in initiate_model_evaluation
+    model_evaluation.log_into_mlflow()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\components\model_evaluation.py", line 29, in log_into_mlflow
+    test_x= test.data.drop([self.config.target_column],axis=1)
+NameError: name 'test' is not defined
+[2025-11-18 13:23:54,787: INFO: main :Data Ingestion stage]
+[2025-11-18 13:23:54,803: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:23:54,803: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:23:54,803: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:23:54,818: INFO: common :created directory at:artifacts]
+[2025-11-18 13:23:54,818: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 13:23:54,818: INFO: data_ingeation :Rile already exists]
+[2025-11-18 13:23:54,818: INFO: main :Data Validation stage]
+[2025-11-18 13:23:54,818: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:23:54,834: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:23:54,834: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:23:54,834: INFO: common :created directory at:artifacts]
+[2025-11-18 13:23:54,865: INFO: main :Data Transformation stage]
+[2025-11-18 13:23:54,881: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:23:54,881: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:23:54,881: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:23:54,881: INFO: common :created directory at:artifacts]
+[2025-11-18 13:23:54,881: INFO: common :created directory at:artifacts/data_transformation]
+[2025-11-18 13:23:54,928: INFO: data_transformation :Splitted data into training and test sets]
+[2025-11-18 13:23:54,928: INFO: data_transformation :(1199, 12)]
+[2025-11-18 13:23:54,928: INFO: data_transformation :(400, 12)]
+[2025-11-18 13:23:54,928: INFO: main :Model Trainer stage]
+[2025-11-18 13:23:54,928: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:23:54,928: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:23:54,944: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:23:54,944: INFO: common :created directory at:artifacts]
+[2025-11-18 13:23:54,944: INFO: common :created directory at:artifacts/model_trainer]
+[2025-11-18 13:23:54,991: INFO: main :Model Evaluation stage]
+[2025-11-18 13:23:55,007: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:23:55,007: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:23:55,007: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:23:55,007: INFO: common :created directory at:artifacts]
+[2025-11-18 13:23:55,007: INFO: common :created directory at:artifacts/model_evaluation]
+[2025-11-18 13:23:55,035: ERROR: main :'ModelEvaluationConfig' object has no attribute 'mlflow_uri']
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\main.py", line 61, in <module>
+    model_evaluation.initiate_model_evaluation()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\pipeline\model_evaluation_pipeline.py", line 16, in initiate_model_evaluation
+    model_evaluation.log_into_mlflow()
+  File "C:\Users\pc\Desktop\ai\mlops-datascience\src\mlops_pipeline\components\model_evaluation.py", line 32, in log_into_mlflow
+    mlflow.set_registry_uri(self.config.mlflow_uri)
+AttributeError: 'ModelEvaluationConfig' object has no attribute 'mlflow_uri'
+[2025-11-18 13:28:15,868: INFO: main :Data Ingestion stage]
+[2025-11-18 13:28:15,889: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:28:15,889: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:28:15,889: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:28:15,889: INFO: common :created directory at:artifacts]
+[2025-11-18 13:28:15,889: INFO: common :created directory at:artifacts/data_ingestion]
+[2025-11-18 13:28:15,899: INFO: data_ingeation :Rile already exists]
+[2025-11-18 13:28:15,899: INFO: main :Data Validation stage]
+[2025-11-18 13:28:15,899: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:28:15,899: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:28:15,915: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:28:15,915: INFO: common :created directory at:artifacts]
+[2025-11-18 13:28:15,946: INFO: main :Data Transformation stage]
+[2025-11-18 13:28:15,946: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:28:15,946: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:28:15,962: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:28:15,962: INFO: common :created directory at:artifacts]
+[2025-11-18 13:28:15,962: INFO: common :created directory at:artifacts/data_transformation]
+[2025-11-18 13:28:15,995: INFO: data_transformation :Splitted data into training and test sets]
+[2025-11-18 13:28:15,995: INFO: data_transformation :(1199, 12)]
+[2025-11-18 13:28:15,995: INFO: data_transformation :(400, 12)]
+[2025-11-18 13:28:15,995: INFO: main :Model Trainer stage]
+[2025-11-18 13:28:16,010: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:28:16,010: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:28:16,010: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:28:16,010: INFO: common :created directory at:artifacts]
+[2025-11-18 13:28:16,010: INFO: common :created directory at:artifacts/model_trainer]
+[2025-11-18 13:28:16,057: INFO: main :Model Evaluation stage]
+[2025-11-18 13:28:16,072: INFO: common :yaml file: config\config.yaml loaded]
+[2025-11-18 13:28:16,072: INFO: common :yaml file: params.yaml loaded]
+[2025-11-18 13:28:16,072: INFO: common :yaml file: schema.yaml loaded]
+[2025-11-18 13:28:16,072: INFO: common :created directory at:artifacts]
+[2025-11-18 13:28:16,072: INFO: common :created directory at:artifacts/model_evaluation]
+[2025-11-18 13:28:17,382: INFO: common :json file saved at: artifacts\model_evaluation\metrics.json]
