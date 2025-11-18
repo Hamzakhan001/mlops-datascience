@@ -32,7 +32,7 @@ class ConfigurationManager:
         schema = self.schema.COLUMNS
         
         data_validation_config = DataValidationConfig(
-            root_dir = config.root.dir,
+            root_dir = config.root_dir,
             STATUS_FILE=config.STATUS_FILE,
             unzip_data_dir = config.unzip_data_dir,
             all_schema=schema
